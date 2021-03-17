@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+    <head>
+        <title>letters</title>
+        <style>
+body {
+    text-align: center;
+    background-color: black;
+    color: #eee;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+td {
+    border: 1px solid #333;
+    min-width: 18px;
+    min-height: 18px;
+    width: 18px;
+    height: 18px;
+    cursor: default;
+    vertical-align: center;
+}
+td.hilight {
+    background-color: white;
+    color: black;
+}
+td.cursor {
+    background-color: #330;
+    color: #ffc;
+}
+td.cursor.hilight {
+    background-color: #ffc;
+    color: black;
+}
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: auto;
+    margin-top: 20px;
+}
+        </style>
+    </head>
+    <body>
+        <div id="msg">&nbsp;</div>
+        <table id="tbl">
+        </table>
+<script>
+var data = `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxoooooooxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxooxxxooxxxxxxxxxyyyyyyxxxxxxxxxxxxxxxaaaaaaaaaaaaaaaaaaaaaaaaaxxxxxx
+xxxxxxxxxxxxxxxxoxxxxxoxxxxxxxxxxyxyxyxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxaxxxxxx
+xxxxxxxxxxxxxxxxoxxxxxoxxxxxxxxxyyooaaaaaaxxxxxxxxxxxaxaaaaaaaaaaaaaaaaaaaaaxaxxxxxx
+xxxxxxxxxxxxxxxxoxxxxxoxxxxxxxxxxyxoxyxxxaxxxxxxxxxxxaxaxxxayxyaxyyaxyxayyxaxaxxxxxx
+xxxxxxxxxxxxxxxxoxxxxxoxxxxxxxxxyyyyyyxxxaxxxxxxxxxxxaxayxxyxyyyyxyyxxxyyxaaxaxxxxxx
+xxxxxxxxxxxxxxxaoooooooaxxxxxxxxxyxyxyxxxaxxxxyyyyyxxaxaxxxyxoooyxooxxxooxaaxaxxxxxx
+xxxxxxxxxoooooooyyyyyyyoooooooxxxxxaxxxxxyyyyyoooooxxaxayxxyxyyayxyyxyyayxaaxaxxxxxx
+xxxxxxxxxoxxxxxoyyyyyyyoxxxxxoxxxxxaxxxxxxxxxxyyayyxxaxaxxyaxyyaayaaxyyaayaaxaxxxxxx
+xxxxxxxxxoxxxxxoyyyyyyyoxxxxxoxxxxxaxxxxxxxxxxxxaxxxxaxaaaaaaaaaaaaaaaaaaaaaxaxxxxxx
+xxxxxxxxxoxxxxxoyyyyyyyoxxxxxoaaaaaaxxxyyyyyyxxyyyxxxaxxxxxxxxxxxxxxxxxxxxxxxaxxxxxx
+xxxxxxxxxooxxxxoyyyyyyyoxxxxooxxxxxxxxxyyyyyyxxyyyxxxaaaaaaaaaaaaaaaaaaaaaaaaaxxxxxx
+xxxxxxxxxooxxxxoyyyyyyyoxxxxooxxxxxxxxxyyooyyaaaoyxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxoooooooyyyyyyyoooooooxxxxxxxxxyyooyyaaaoyxxxyyyxyyyyyyyxyyyyyyyxyxxxxxxxxxx
+xxxxxxxxxxxxxxxaoooooooaxxxxxxxxxxxxxxxyyaayyxxyyyxxxyoyxyoooyxyaaaaoooyxyxxxxxxxxxx
+xxxxxxxxxxxxxxxxoxxxxxoxxxxxxxxxxxxxxxxyyaayyxxyyyxxxyyyxyyayyxxxyyyyyyyxyxxxxxxxxxx
+xxxxxxxxxxxxxxxxoxxxxxoxxxxxxxxxxxxxxxxxxaaxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxaxxxxxxxxxx
+xxxxxxxxxxxxxxxxoxxxxxoxxxxxxxxxxxxxxxxxxaaxxxxxxxxxxyyyxxyyyxxxxxxxxxxyaaxxxxxxxxxx
+xxxxxxxxxxxxxxxxoxoxoxoxxxxxxxxxxxxxxxxaaaaaaxyyyoyxxyoyxxyyyxxxxxxxxxxyayxxxxxxxxxx
+xxxxxxxxxxxxxxxxoxoxoxoxxxxxxxxxxxxxxxxaaaaaaxyoyyyyxxaxxxyyyxxxxxxxxxxyayxxxxxxxxxx
+xxxxxxxxxxxxxxxxoooooooxxxxxxxxxxxxxxxxaaooaaxyyyyoyxyyyxxyoyxxxxxxxxxxyoyxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaaooaayyyoyyyxyoaaayoyxxyyyoyyyxyoyxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaaaaaaxoyyyyoxyyyxxyoyxxyoyyyoyxyoyxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaaaaaaxyyyoyyxxaxxxyayxxyyxyxaaxyyyxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxyoyxxyayxxayyyyyaxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxyyaoyxyyyxxyayxxayyyyxyxyyyxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxoyyyyxxxxxxxaxxxayyyyyyxoooxxoaaaaaox
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxayxyaxyyyxyyyyyxaoyyyoyxyyyxxayxxxyax
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxyyyyoxyoaayoyoyxxxxxxxxxxxxxxaxxxxxax
+xAAAAAxaaaaaxaxaaaaaxaaaaaxxxxxxxxxxxxxxxxxxxxxyoyyyxyyyxyyyyyxyyyyyyyyaaaxaaxxxxxax
+xAAAAAxaxxxaxaxaxxxaxxxaxixxxxxxxxxxxxxxxxxxxxxxyxyxxxaxxyoyoaayoyoyoyoaaaxaayyxyyax
+xAAAAAaaaaaaaaxaaaxaaaaaxixxxxxxxxxxxxxxxxxxxxxyoyoyoyoyxyyyyyxyyyyyyyyaaaxaaoyxyoax
+xAAAAAxaxxxaxaxaxaxxxxxaxoxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxaxxxxxxxx
+xAAAAAxaxxxaxaaaxaaaaaxaxoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaaxxxxxxx
+xxxxxxxxxxxaxxxxxxxxxxxxxxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaaxxxxxxx
+xxxxxxxaaaaaxaiaiaiaiaiaxxxaaaaaaaaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xxxxxxxxxaxxxixxxxxiaiaixxxxaaaaaaaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xxxxxxxxxaxxxaiaiaxaieiaxxxxxaaaaaaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xxxxxxxxxaxxxixxxxxiaiaixxxxxxaaaaaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xxxxxxxaaaiaiaiaiaxaiaiaxxxxxxxaaaaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxaaaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xxxxxxxaaaaaxaxxxaxauaoaxxxxxxxxxaaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xxxxxxxaxxxoxoxxxoxoaoauxxxxxxxxxxaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xxxxxxxaxxxaoaxxxaoaoaoaxxxxxxxxxxxaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xxxxxxxaxxxoxoxxxoxuaoaoxxxxxxxxxxxxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaaxxxxxxx
+xxxxxxxaaaaaxaoaoaxooauaxxxxxxxxxxxxxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaaxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaaaaaaaaaxxxaaaxxxaaaaaxxxaaaxxxaaaaxaaxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaaaaaaaxxxxxaxxxxxaaaxxxxxaxxxxxaaaxaaxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaaaaaaxxxxxaxxxxxaaaxxxxxaxxxxxaaxxxaxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxaaaaaaaaaaaaxxaaaaaaaaxaaaaaxaaaaaaaxaaaaaxaaaaaxaaxxxxxxx
+xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaaaaaxaaaaaaaxaaaaaxaaaaaaaaxxxxxxx
+xaxxxxxxxxxxxxxxxxxxxxxxxaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaxaaaaaaaaaaaaaaaaaaaaaxaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaxaxxxaxaaaxxxaxxxaxxxaxaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaxaxxxaxaaaxxxaxaxaxxxaxaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaxaxxxaxaaaxxxaxaxaxxxaxaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaxaxaxaxaaaxxxaxaxaxaaaxaayyyaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaxaxaxaxxxaxxxaxaxaxxxaxayyyyyaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaxaaaaaaaaaaaaaaaaaaaaaxayyyyyaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaxaxxxxxxxxxxxxxxxxxxxxxaaayaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaaaaaaaaaaaaaaaaaaaaaaaaaaayaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`
+var lines = data.split("\n");
+var tbl = document.getElementById("tbl");
+var mousedown = false;
+var hovercell = false;
+var hilight = false;
+var editdown = false;
+var heldkeys = {};
+for (var i = 0; i < lines.length; ++i) {
+    var letters = lines[i].split("");
+    var row = document.createElement("tr");
+    for (var j = 0; j < letters.length; ++j) {
+        let cell = document.createElement("td");
+        cell.textContent = letters[j].toLowerCase();
+        if (cell.textContent != letters[j])
+            cell.className = "hilight";
+        row.appendChild(cell);
+        cell.addEventListener("mousemove", function (event) {
+            hovercell = cell;
+            event.stopPropagation();
+            if (editdown && Object.keys(heldkeys).length) {
+                cell.textContent = Object.keys(heldkeys)[0];
+                return;
+            }
+            if (!mousedown)
+                return;
+            cell.className = hilight ? "hilight" : "";
+        });
+    }
+    tbl.appendChild(row);
+}
+document.addEventListener("mousedown", function () {
+    if (Object.keys(heldkeys).length) {
+        editdown = true;
+        if (hovercell)
+            hovercell.textContent = Object.keys(heldkeys)[0];
+        return;
+    }
+    mousedown = true;
+    hilight = !hovercell || hovercell.className != "hilight";
+    if (hovercell) {
+        hovercell.className = hilight ? "hilight" : "";
+    }
+});
+document.addEventListener("mouseup", function () {
+    editdown = false;
+    mousedown = false;
+});
+document.addEventListener("mousemove", function () {
+    hovercell = false;
+});
+document.addEventListener("keydown", function (event) {
+    if (event.ctrlKey && event.key == "c") {
+        var string = "";
+        var rows = document.getElementsByTagName("tr");
+        for (var i = 0; i < rows.length; ++i) {
+            if (i != 0)
+                string += "\n";
+            var cols = rows[i].getElementsByTagName("td");
+            for (var j = 0; j < cols.length; ++j) {
+                string += cols[j].textContent;
+            }
+        }
+        var area = document.createElement("textarea");
+        area.textContent = string;
+        document.body.appendChild(area);
+        area.select();
+        document.execCommand("copy");
+        document.body.removeChild(area);
+        document.getElementById("msg").textContent = "data copied to clipboard";
+        window.setTimeout(function () {
+            document.getElementById("msg").innerHTML = "&nbsp;";
+        }, 1500);
+    } else if (event.keyCode >= 65 && event.keyCode <= 90)
+        heldkeys[String.fromCharCode(event.keyCode).toLowerCase()] = true;
+});
+document.addEventListener("keyup", function (event) {
+    if (event.keyCode >= 65 && event.keyCode <= 90)
+        delete heldkeys[String.fromCharCode(event.keyCode).toLowerCase()];
+});
+</script>
+    </body>
+</html>
