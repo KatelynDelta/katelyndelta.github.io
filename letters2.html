@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+    <head>
+        <title>letters</title>
+        <style>
+body {
+    text-align: center;
+    background-color: black;
+    color: #eee;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+td {
+    border: 1px solid #333;
+    min-width: 18px;
+    min-height: 18px;
+    width: 18px;
+    height: 18px;
+    cursor: default;
+    vertical-align: center;
+}
+td.hilight {
+    background-color: white;
+    color: black;
+}
+td.cursor {
+    background-color: #330;
+    color: #ffc;
+}
+td.cursor.hilight {
+    background-color: #ffc;
+    color: black;
+}
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: auto;
+    margin-top: 20px;
+}
+        </style>
+    </head>
+    <body>
+        <div id="msg">&nbsp;</div>
+        <button onclick="save()">save</button> <button onclick="load()">load</button> <input type="file" id="load" style="display: none"> <button onclick="askreset()">restart</button>
+        <table id="tbl">
+        </table>
+<script>
+var data = `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxoooooooxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxooxxxooxxxxxxxxxyyyyyyxxxxxxxxxxxxxxxaaaaaaaaaaaaaaaaaaaaaaaaaxxxxxx
+xxxxxxxxxxxxxxxxoxxxxxoxxxxxxxxxxyxyxyxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxaxxxxxx
+xxxxxxxxxxxxxxxxoxxxxxoxxxxxxxxxyyooaaaaaaxxxxxxxxxxxaxaaaaaaaaaaaaaaaaaaaaaxaxxxxxx
+xxxxxxxxxxxxxxxxoxxxxxoxxxxxxxxxxyxoxyxxxaxxxxxxxxxxxaxaxxxayxyaxyyaxyxayyxaxaxxxxxx
+xxxxxxxxxxxxxxxxoxxxxxoxxxxxxxxxyyyyyyxxxaxxxxxxxxxxxaxayxxyxyyyyxyyxxxyyxaaxaxxxxxx
+xxxxxxxxxxxxxxxaoooooooaxxxxxxxxxyxyxyxxxaxxxxyyyyyxxaxaxxxyxoooyxooxxxooxaaxaxxxxxx
+xxxxxxxxxoooooooyyyyyyyoooooooxxxxxaxxxxxyyyyyoooooxxaxayxxyxyyayxyyxyyayxaaxaxxxxxx
+xxxxxxxxxoxxxxxoyyyyyyyoxxxxxoxxxxxaxxxxxxxxxxyyayyxxaxaxxyaxyyaayaaxyyaayaaxaxxxxxx
+xxxxxxxxxoxxxxxoyyyyyyyoxxxxxoxxxxxaxxxxxxxxxxxxaxxxxaxaaaaaaaaaaaaaaaaaaaaaxaxxxxxx
+xxxxxxxxxoxxxxxoyyyyyyyoxxxxxoaaaaaaxxxyyyyyyxxyyyxxxaxxxxxxxxxxxxxxxxxxxxxxxaxxxxxx
+xxxxxxxxxooxxxxoyyyyyyyoxxxxooxxxxxxxxxyyyyyyxxyyyxxxaaaaaaaaaaaaaaaaaaaaaaaaaxxxxxx
+xxxxxxxxxooxxxxoyyyyyyyoxxxxooxxxxxxxxxyyooyyaaaoyxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxoooooooyyyyyyyoooooooxxxxxxxxxyyooyyaaaoyxxxyyyxyyyyyyyxyyyyyyyxyxxxxxxxxxx
+xxxxxxxxxxxxxxxaoooooooaxxxxxxxxxxxxxxxyyaayyxxyyyxxxyoyxyoooyxyaaaaoooyxyxxxxxxxxxx
+xxxxxxxxxxxxxxxxoxxxxxoxxxxxxxxxxxxxxxxyyaayyxxyyyxxxyyyxyyayyxxxyyyyyyyxyxxxxxxxxxx
+xxxxxxxxxxxxxxxxoxxxxxoxxxxxxxxxxxxxxxxxxaaxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxaxxxxxxxxxx
+xxxxxxxxxxxxxxxxoxxxxxoxxxxxxxxxxxxxxxxxxaaxxxxxxxxxxyyyxxyyyxxxxxxxxxxyaaxxxxxxxxxx
+xxxxxxxxxxxxxxxxoxoxoxoxxxxxxxxxxxxxxxxaaaaaaxyyyoyxxyoyxxyyyxxxxxxxxxxyayxxxxxxxxxx
+xxxxxxxxxxxxxxxxoxoxoxoxxxxxxxxxxxxxxxxaaaaaaxyoyyyyxxaxxxyyyxxxxxxxxxxyayxxxxxxxxxx
+xxxxxxxxxxxxxxxxoooooooxxxxxxxxxxxxxxxxaaooaaxyyyyoyxyyyxxyoyxxxxxxxxxxyoyxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaaooaayyyoyyyxyoaaayoyxxyyyoyyyxyoyxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaaaaaaxoyyyyoxyyyxxyoyxxyoyyyoyxyoyxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaaaaaaxyyyoyyxxaxxxyayxxyyxyxaaxyyyxxxxxxxxxx
+xiixixiiiiiiixuuuxuxxuxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxyoyxxyayxxayyyyyaxxxxxxxxxxxxxx
+xxiiixixixxxixxxuuuxuuuuxxxxxxxxxxxxxxxxxxxxxxxyyaoyxyyyxxyayxxayyyyxyxyyyxxxxxxxxxx
+xiixxxixixiiiuuxuxuxxxuxxxxxxxxxxxxxxxxxxxxxxxxoyyyyxxxxxxxaxxxayyyyyyxoooxxoaaaaaox
+xxiiiiiiixixxxuuuxuuuuuxxxxxxxxxxxxxxxxxxxxxxxxayxyaxyyyxyyyyyxaoyyyoyxyyyxxayxxxyax
+xxxxxxxxxxiiixxxuxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxyyyyoxyoaayoyoyxxxxxxxxxxxxxxaxxxxxax
+xiiiiixxixxxixuuuxxuuuuuxxxxxxxxxxxxxxxxxxxxxxxyoyyyxyyyxyyyyyxyyyyyyyyaaaxaaxxxxxax
+xiiiiixxiiixixuxxxxuuuuuxxxxxxxxxxxxxxxxxxxxxxxxyxyxxxaxxyoyoaayoyoyoyoaaaxaayyxyyax
+xiiiiiiiixiiixuxuuuuuuuuxxxxxxxxxxxxxxxxxxxxxxxyoyoyoyoyxyyyyyxyyyyyyyyaaaxaaoyxyoax
+xiiiiixixxxxxxuxuxxuuuuuxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxaxxxxxxxx
+xiiiiixiiiiaxuuuuxxuuuuuxxxxxxxxxxxxxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaaxxxxxxx
+xxxxxxxxxxxixxxxxxxxxxxxxxxxxxxxxxxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaaxxxxxxx
+xAAAAAxaaaaaxaaaxaxxxxxxxxxxxxxxxaaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xAAAAAxxxxxaxaxaxaxxaaeeiioouuxaaaaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xAAAAAaaaaaaaaxaxaaaaaeeiioouuaaaaaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xAAAAAxaxxxaxxxaxaxxaaeeiioouuxaaaaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xAAAAAxaaaxaxaaaaaxxxxxxxxxxxxxxaaaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xxxxxxxxxxxexxxxxxxxxxxxxxxxxxxxxaaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xeeeeexexeeexeexooxoooooxxxxxxxxxxaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xeeeeexexexxxxexoxxoooooxxxxxxxxxxxaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xeeeeeeeeexeeeeoooooooooxxxxxxxxxxxxaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxaaxaaxxxxxxx
+xeeeeexxxexxxexxoxxoooooxxxxxxxxxxxxxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaaxxxxxxx
+xeeeeexeeeexeeexooxoooooxxxxxxxxxxxxxxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaaxxxxxxx
+xxxxxxxxexeeexexoxxxxxxxxxxxxxxxxxxxxxxaaaaaaaaxxxaaaxxxaaaaaxxxaaaxxxaaaaxaaxxxxxxx
+xeeexeeeexxexxexoxoooooxxxxxxxxxxxxxxxxaaaaaaaxxxxxaxxxxxaaaxxxxxaxxxxxaaaxaaxxxxxxx
+xexeeexxexeeexexoooxoxooxxxxxxxxxxxxxxxxaaaaaaxxxxxaxxxxxaaaxxxxxaxxxxxaaxxxaxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxaaaaaaaaaaaaxxaaaaaaaaxaaaaaxaaaaaaaxaaaaaxaaaaaxaaxxxxxxx
+xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaaaaaxaaaaaaaxaaaaaxaaaaaaaaxxxxxxx
+xaxxxxxxxxxxxxxxxxxxxxxxxaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaxaaaaaaaaaaaaaaaaaaaaaxaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaxaxxxaxaaaxxxaxxxaxxxaxaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaxaxxxaxaaaxxxaxaxaxxxaxaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaxaxxxaxaaaxxxaxaxaxxxaxaaaaaaaaxxxaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaxaxaxaxaaaxxxaxaxaxaaaxaaaaaaaaxxxaayyyaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaxaxaxaxxxaxxxaxaxaxxxaxaaaaaaaxxxxayxyyyaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaxaaaaaaaaaaaaaaaaaaaaaxaaaaaaaxxxxayyyyyaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaxaxxxxxxxxxxxxxxxxxxxxxaaaaaaaaaaaaaayaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaayaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`
+var mousedown = false;
+var hovercell = false;
+var hilight = false;
+var editdown = false;
+var heldkeys = {};
+var lines = data.split("\n");
+var tbl = document.getElementById("tbl");
+function reset() {
+    while (tbl.firstChild)
+        tbl.removeChild(tbl.firstChild);
+    for (var i = 0; i < lines.length; ++i) {
+        var letters = lines[i].split("");
+        var row = document.createElement("tr");
+        for (var j = 0; j < letters.length; ++j) {
+            let cell = document.createElement("td");
+            cell.textContent = letters[j].toLowerCase();
+            if (cell.textContent != letters[j])
+                cell.className = "hilight";
+            row.appendChild(cell);
+            cell.addEventListener("mousemove", function (event) {
+                hovercell = cell;
+                event.stopPropagation();
+                if (editdown && Object.keys(heldkeys).length) {
+                    cell.textContent = Object.keys(heldkeys)[0];
+                    return;
+                }
+                if (!mousedown)
+                    return;
+                cell.className = hilight ? "hilight" : "";
+                autosave();
+            });
+        }
+        tbl.appendChild(row);
+    }
+}
+function askreset() {
+    if (confirm("are you sure you want to clear all marks you've made?")) {
+        reset();
+        autosave();
+    }
+}
+reset();
+function loadfile() {
+    if (this.files.length < 1)
+        return;
+    var reader = new FileReader();
+    reader.onload = function (event) {
+        loadgame(reader.result);
+        autosave();
+        loadbutton.value = "";
+    };
+    reader.readAsText(this.files[0]);
+}
+var fileinput = document.getElementById("load");
+fileinput.addEventListener("change", loadfile, false);
+function load() {
+    fileinput.click();
+}
+function loadgame(game) {
+    var cells = document.getElementsByTagName("td");
+    for (var i = 0; i < cells.length; ++i)
+        cells[i].className = "";
+    var rows = document.getElementsByTagName("tr");
+    var positions = game.split(" ");
+    for (var i = 0; i < positions.length; ++i) {
+        var pos = positions[i].split(",");
+        var cols = rows[parseInt(pos[0], 10)].getElementsByTagName("td");
+        var cell = cols[parseInt(pos[1], 10)];
+        cell.className = "hilight";
+    }
+}
+var autosaved = localStorage.getItem("ca2-autosave");
+if (autosaved) {
+    try {
+        loadgame(autosaved);
+    } catch { }
+}
+function savedgame(hilights) {
+    var string = "";
+    var rows = document.getElementsByTagName("tr");
+    for (var i = 0; i < rows.length; ++i) {
+        var cols = rows[i].getElementsByTagName("td");
+        for (var j = 0; j < cols.length; ++j) {
+            if (cols[j].className == "hilight") {
+                if (string.length > 0)
+                    string += " ";
+                string += i + "," + j;
+            }
+        }
+    }
+    return string;
+}
+function autosave() {
+    localStorage.setItem("ca2-autosave", savedgame());
+}
+function save() {
+    var a = document.createElement("a");
+    var file = new Blob([savedgame(true)], {type: "text/plain"});
+    a.href = URL.createObjectURL(file);
+    a.download = "ca2-save.txt";
+    a.click();
+    URL.revokeObjectURL(a.href);
+}
+document.addEventListener("mousedown", function () {
+    if (Object.keys(heldkeys).length) {
+        editdown = true;
+        if (hovercell)
+            hovercell.textContent = Object.keys(heldkeys)[0];
+        return;
+    }
+    mousedown = true;
+    hilight = !hovercell || hovercell.className != "hilight";
+    if (hovercell) {
+        hovercell.className = hilight ? "hilight" : "";
+        autosave();
+    }
+});
+document.addEventListener("mouseup", function () {
+    editdown = false;
+    mousedown = false;
+});
+document.addEventListener("mousemove", function () {
+    hovercell = false;
+});
+document.addEventListener("keydown", function (event) {
+    if (event.ctrlKey && event.key == "c") {
+        var area = document.createElement("textarea");
+        var string = "";
+        var rows = document.getElementsByTagName("tr");
+        for (var i = 0; i < rows.length; ++i) {
+            if (i != 0)
+                string += "\n";
+            var cols = rows[i].getElementsByTagName("td");
+            for (var j = 0; j < cols.length; ++j)
+                string += cols[j].textContent;
+        }
+        area.textContent = string;
+        document.body.appendChild(area);
+        area.select();
+        document.execCommand("copy");
+        document.body.removeChild(area);
+        document.getElementById("msg").textContent = "data copied to clipboard";
+        window.setTimeout(function () {
+            document.getElementById("msg").innerHTML = "&nbsp;";
+        }, 1500);
+    } else if (event.keyCode >= 65 && event.keyCode <= 90)
+        heldkeys[String.fromCharCode(event.keyCode).toLowerCase()] = true;
+});
+document.addEventListener("keyup", function (event) {
+    if (event.keyCode >= 65 && event.keyCode <= 90)
+        delete heldkeys[String.fromCharCode(event.keyCode).toLowerCase()];
+});
+</script>
+    </body>
+</html>
